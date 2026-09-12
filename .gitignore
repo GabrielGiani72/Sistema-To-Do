@@ -1,0 +1,17 @@
+# Pasta gerada pelo Maven ao compilar (mvn package)
+target/
+
+# WAR gerado (o Tomcat via Docker usa isso, mas não precisa versionar)
+deploy/*.war
+
+# Arquivos de configuração da IDE (variam de máquina pra máquina)
+.vscode/
+.idea/
+*.iml
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
