@@ -38,9 +38,7 @@ public class ConexaoBD {
         return this.conexao;
     }
 
-    /**
-      retorna um ResultSet com os dados encontrados.
-     */
+    //retorna um ResultSet com os dados encontrados
     public ResultSet executar(String sql, Object... parametros) throws SQLException {
         Connection conn = this.obterConexao();
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -50,7 +48,7 @@ public class ConexaoBD {
         return ps.executeQuery();
     }
 
-    /**Retorna quantas linhas foram afetadas.*/
+    //Retorna quantas linhas foram afetadas
     
     public int executarUpdate(String sql, Object... parametros) throws SQLException {
         Connection conn = this.obterConexao();

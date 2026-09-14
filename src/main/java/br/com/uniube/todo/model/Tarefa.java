@@ -21,7 +21,7 @@ public class Tarefa {
         this.datacriacao = LocalDate.now();
     }
  
-    // Construtor completo (usado ao ler uma tarefa que já existe no banco)
+    // Construtor completo
     public Tarefa(int id, String titulo, String descricao, boolean concluida, LocalDate dataCriacao) {
         this.id = id;
         this.titulo = titulo;
