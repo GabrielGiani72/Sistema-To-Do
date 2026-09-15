@@ -15,8 +15,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties> 
     
@@ -36,6 +36,16 @@
     <version>6.1.0</version>
     <scope>provided</scope>
 </dependency>
+
+<dependency>
+  <groupId>com.mysql</groupId>
+  <artifactId>mysql-connector-j</artifactId>
+  <version>8.4.0</version>
+</dependency>
+
+
+
+
 </dependencies>
 
 
@@ -73,6 +83,16 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
+
+        <plugin>
+         <artifactId>maven-war-plugin</artifactId>
+           <version>3.2.2</version>
+            <configuration>
+              <outputDirectory>${project.basedir}/deploy</outputDirectory>
+              <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
