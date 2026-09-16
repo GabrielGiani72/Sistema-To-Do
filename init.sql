@@ -4,10 +4,6 @@ CREATE DATABASE IF NOT EXISTS todo_db
 
 USE todo_db;
 
--- =========================================
--- TABELA DE TAREFAS
--- =========================================
-
 CREATE TABLE tarefas (
     id BIGINT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(150) NOT NULL,
@@ -18,12 +14,10 @@ CREATE TABLE tarefas (
     PRIMARY KEY (id)
 );
 
--- =========================================
--- DADOS PARA TESTE
--- =========================================
+--DADOS PARA TESTE
 
 INSERT INTO tarefas (titulo, descricao, concluida, data_criacao)
 VALUES
-    ('Estudar para a prova', 'Revisar capitulos 1 a 4', FALSE, CURDATE()),
-    ('Comprar mantimentos', 'Leite, ovos, pao', FALSE, CURDATE()),
+    ('Acumular Aura', 'Hoje as 00:30 farmar aura no topo do prédio mais alto', FALSE, CURDATE()),
+    ('Lista de compras', 'Leite, ovos, pao, carne', FALSE, CURDATE()),
     ('Entregar trabalho MVC', 'Finalizar sistema To-Do', FALSE, CURDATE());

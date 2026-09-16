@@ -13,8 +13,8 @@ import java.io.IOException;
 @WebServlet("/tarefas")
 public class TarefaServlet extends HttpServlet {
 
-    private static final String LISTA = "/WEB-INF/views/tarefas/lista.jsp";
-    private static final String FORM = "/WEB-INF/views/tarefas/form.jsp";
+    private static final String LISTA = "/WEB-INF/views/lista.jsp";
+    private static final String FORM = "/WEB-INF/views/form.jsp";
 
     private final TarefaService tarefaService = new TarefaService();
 
